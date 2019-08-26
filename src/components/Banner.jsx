@@ -7,7 +7,7 @@ export default class Banner extends Component {
       <section
         id="hero-banner"
         className="parallax"
-        style={{ backgroundImage: `${img}` }}
+        style={{ backgroundImage: `url(${img})` }}
       >
         <div className="container">
           <div className="row">

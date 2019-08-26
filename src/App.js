@@ -13,6 +13,10 @@ import Banner from "./components/Banner";
 import CallToAction from "./components/CallToAction";
 import AboutSection from "./components/AboutSection";
 import MoreAboutSection from "./components/MoreAboutSection";
+import ServiceSection from "./components/ServiceSection";
+import PortfolioSection from "./components/PortfolioSection";
+import CallToAction2 from "./components/CallToAction2";
+import TeamSection from "./components/TeamSection";
 
 export default class App extends Component {
   render() {
@@ -24,6 +28,10 @@ export default class App extends Component {
           <CallToAction />
           <AboutSection />
           <MoreAboutSection />
+          <ServiceSection />
+          <PortfolioSection />
+          <CallToAction2 />
+          <TeamSection />
         </div>
       </React.Fragment>
     );
