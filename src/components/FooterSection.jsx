@@ -172,9 +172,6 @@ export default class FooterSection extends Component {
             </div>
           </div>
         </section>
-        <div id="back-to-top" className="back-to-top reveal">
-          <i className="fa fa-angle-up fa-2x"></i>
-        </div>
       </>
     );
   }

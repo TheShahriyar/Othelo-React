@@ -17,7 +17,7 @@ export default class Navbar extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand page-scroll" href="body">
+            <a className="navbar-brand page-scroll" href="/">
               Othelo
             </a>
           </div>
@@ -28,7 +28,7 @@ export default class Navbar extends Component {
           >
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <a className="page-scroll" href="body">
+                <a className="page-scroll" href="#hero-banner">
                   Home
                 </a>
               </li>

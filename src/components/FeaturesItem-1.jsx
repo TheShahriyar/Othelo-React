@@ -2,26 +2,21 @@ import React, { Component } from "react";
 
 export default class FeaturesItem1 extends Component {
   render() {
+    const { iconName, title1, subtitle, title2, title3, children } = this.props;
     return (
       <div className="feature-post">
         <div className="feature-post-content">
           <a href="/">
-            <i className="icon-mobile"></i>
+            <i className={iconName}></i>
           </a>
-          <h2>RESPONSIVE DESIGN</h2>
-          <p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+          <h2>{title1}</h2>
+          <p>{subtitle}</p>
         </div>
         <div className="hover-feature">
-          <h2>Branding Strategies</h2>
-          <h1>Creative Design</h1>
+          <h2>{title2}</h2>
+          <h1>{title3}</h1>
           <span></span>
-          <p>
-            Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec
-            consectetuer ligula vulputate sem tristique cursus. Nam nulla quam,
-            gravida non, commodo a, sodales sit amet, nisi. Donec nec justo eget
-            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-            Aenean dignissim pellentesque felis.
-          </p>
+          {children}
         </div>
       </div>
     );
