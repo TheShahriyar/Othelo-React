@@ -7,6 +7,7 @@ import img5 from "../images/portfolio/massonry/5.jpg";
 import img6 from "../images/portfolio/massonry/6.jpg";
 import img7 from "../images/portfolio/massonry/7.jpg";
 import img8 from "../images/portfolio/massonry/8.jpg";
+import SectionTitle from "./SectionTitle";
 
 export default class PortfolioSection extends Component {
   render() {
@@ -19,15 +20,14 @@ export default class PortfolioSection extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section-title text-center">
-                <h3>Awarded Work</h3>
+              <SectionTitle title="Awarded Work">
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Donec odio. Quisque volutpat mattis eros. Nullam malesuada
                   erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                  suscipit, posuere a, pede. Donec nec justo{" "}
+                  suscipit, posuere a, pede. Donec nec justo
                 </p>
-              </div>
+              </SectionTitle>
             </div>
           </div>
           <div className="row">

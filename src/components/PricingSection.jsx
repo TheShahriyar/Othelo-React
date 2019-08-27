@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import pbg1 from "../images/others/pricing-bg-1.jpg";
 import pbg2 from "../images/others/pricing-bg-2.jpg";
 import pbg3 from "../images/others/pricing-bg-3.jpg";
+import SectionTitle from "./SectionTitle";
 
 export default class PricingSection extends Component {
   render() {
@@ -10,15 +11,14 @@ export default class PricingSection extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section-title text-center">
-                <h3>Featured Packages</h3>
+              <SectionTitle title="Featured Packages">
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Donec odio. Quisque volutpat mattis eros. Nullam malesuada
                   erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                  suscipit, posuere a, pede. Donec nec justo{" "}
+                  suscipit, posuere a, pede. Donec nec justo
                 </p>
-              </div>
+              </SectionTitle>
             </div>
           </div>
           <div className="row">

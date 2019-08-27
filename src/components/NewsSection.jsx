@@ -3,6 +3,7 @@ import blog4 from "../images/blog/img-4.jpg";
 import blog8 from "../images/blog/img-8.jpg";
 import blog9 from "../images/blog/img-9.jpg";
 import blog5 from "../images/blog/img-5.jpg";
+import SectionTitle from "./SectionTitle";
 
 export default class NewsSection extends Component {
   render() {
@@ -15,15 +16,14 @@ export default class NewsSection extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section-title text-center">
-                <h3>News & Events</h3>
+              <SectionTitle title="News & Events">
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Donec odio. Quisque volutpat mattis eros. Nullam malesuada
                   erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                  suscipit, posuere a, pede. Donec nec justo{" "}
+                  suscipit, posuere a, pede. Donec nec justo
                 </p>
-              </div>
+              </SectionTitle>
             </div>
           </div>
           <div className="row">

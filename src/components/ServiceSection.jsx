@@ -6,6 +6,7 @@ import img4 from "../images/others/img-4.jpg";
 import img5 from "../images/others/img-5.jpg";
 import img6 from "../images/others/img-6.jpg";
 import img7 from "../images/others/img-7.jpg";
+import SectionTitle from "./SectionTitle";
 
 export default class ServiceSection extends Component {
   render() {
@@ -18,15 +19,14 @@ export default class ServiceSection extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section-title text-center">
-                <h3>Our Services</h3>
+              <SectionTitle title="Our Services">
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Donec odio. Quisque volutpat mattis eros. Nullam malesuada
                   erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                  suscipit, posuere a, pede. Donec nec justo{" "}
+                  suscipit, posuere a, pede. Donec nec justo
                 </p>
-              </div>
+              </SectionTitle>
             </div>
           </div>
           <div className="row">

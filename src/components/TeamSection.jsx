@@ -3,6 +3,7 @@ import team2 from "../images/team/team2.jpg";
 import team3 from "../images/team/team3.jpg";
 import team4 from "../images/team/team4.jpg";
 import team5 from "../images/team/team5.jpg";
+import SectionTitle from "./SectionTitle";
 
 export default class TeamSection extends Component {
   render() {
@@ -11,15 +12,14 @@ export default class TeamSection extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section-title text-center">
-                <h3>Dedicated Team</h3>
+              <SectionTitle title="Dedicated Team">
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Donec odio. Quisque volutpat mattis eros. Nullam malesuada
                   erat ut turpis. Suspendisse urna nibh, viverra non, semper
                   suscipit, posuere a, pede. Donec nec justo
                 </p>
-              </div>
+              </SectionTitle>
             </div>
           </div>
           <div className="row">

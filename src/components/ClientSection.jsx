@@ -8,6 +8,7 @@ import client6 from "../images/clients/client6.png";
 import clientbg from "../images/bg/bg2.jpg";
 
 import TestimonialSection from "./TestimonialSection";
+import SectionTitle from "./SectionTitle";
 
 export default class ClientSection extends Component {
   render() {
@@ -19,9 +20,10 @@ export default class ClientSection extends Component {
       >
         <div className="container">
           <div className="row">
-            <div className="section-title text-center white">
-              <h3>Clients & Review</h3>
-            </div>
+            <SectionTitle
+              title="Clients & Review"
+              style="text-center white"
+            ></SectionTitle>
           </div>
           <div className="row" style={{ marginBottom: "80px" }}>
             <div className="col-md-2 col-sm-4 col-xs-6">

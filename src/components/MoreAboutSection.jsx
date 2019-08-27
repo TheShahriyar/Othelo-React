@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SectionTitle from "./SectionTitle";
 
 export default class MoreAboutSection extends Component {
   render() {
@@ -7,9 +8,10 @@ export default class MoreAboutSection extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section-title left small">
-                <h3>More About Us</h3>
-              </div>
+              <SectionTitle
+                title="More about us"
+                style="left small"
+              ></SectionTitle>
             </div>
           </div>
           <div className="row">
