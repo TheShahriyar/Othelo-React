@@ -17,6 +17,11 @@ import ServiceSection from "./components/ServiceSection";
 import PortfolioSection from "./components/PortfolioSection";
 import CallToAction2 from "./components/CallToAction2";
 import TeamSection from "./components/TeamSection";
+import NewsSection from "./components/NewsSection";
+import PricingSection from "./components/PricingSection";
+import ClientSection from "./components/ClientSection";
+import ContactSection from "./components/ContactSection";
+import FooterSection from "./components/FooterSection";
 
 export default class App extends Component {
   render() {
@@ -32,6 +37,11 @@ export default class App extends Component {
           <PortfolioSection />
           <CallToAction2 />
           <TeamSection />
+          <NewsSection></NewsSection>
+          <PricingSection />
+          <ClientSection />
+          <ContactSection />
+          <FooterSection />
         </div>
       </React.Fragment>
     );
