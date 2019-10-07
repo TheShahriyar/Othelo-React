@@ -377,10 +377,10 @@ export default class ServiceSection extends Component {
                       </div>
                     </div>
                   </div>
-                  <div role="tabpanel" class="tab-pane" id="tab6">
-                    <div class="row">
-                      <div class="col-md-4 col-sm-6">
-                        <span class="dropcap bg circle">M</span>
+                  <div role="tabpanel" className="tab-pane" id="tab6">
+                    <div className="row">
+                      <div className="col-md-4 col-sm-6">
+                        <span className="dropcap bg circle">M</span>
                         aecenas volutpat, diam enim sagittis quam, id porta
                         quam. Sed id dolor consectetur fermentum volutpat nibh,
                         accumsan purus. Lorem ipsum dolor sit semper amet,
@@ -389,40 +389,44 @@ export default class ServiceSection extends Component {
                         fermentum orci amet, iaculis libero fugiat nulla
                         pariatur. Excepteur .
                       </div>
-                      <div class="col-md-4 col-sm-6">
-                        <ul class="fa-ul">
+                      <div className="col-md-4 col-sm-6">
+                        <ul className="fa-ul">
                           <li>
-                            <i class="fa-li fa fa-check-circle"></i>Interdum et
-                            malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>Interdum
+                            et malesuada fames ac ante
                           </li>
                           <li>
-                            <i class="fa-li fa fa-check-circle"></i>Malesuada
-                            fames ac ante ipsum
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Malesuada fames ac ante ipsum
                           </li>
                           <li>
-                            <i class="fa-li fa fa-check-circle"></i>Nam blandit
-                            quam nibh, at fermentum
+                            <i className="fa-li fa fa-check-circle"></i>Nam
+                            blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i class="fa-li fa fa-check-circle"></i>Interdum et
-                            malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>Interdum
+                            et malesuada fames ac ante
                           </li>
                           <li>
-                            <i class="fa-li fa fa-check-circle"></i>Malesuada
-                            fames ac ante ipsum
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Malesuada fames ac ante ipsum
                           </li>
                           <li>
-                            <i class="fa-li fa fa-check-circle"></i>Nam blandit
-                            quam nibh, at fermentum
+                            <i className="fa-li fa fa-check-circle"></i>Nam
+                            blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i class="fa-li fa fa-check-circle"></i>Interdum et
-                            malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>Interdum
+                            et malesuada fames ac ante
                           </li>
                         </ul>
                       </div>
-                      <div class="col-md-4 col-sm-6">
-                        <img src={img4} class="img-responsive" alt="Revenue" />
+                      <div className="col-md-4 col-sm-6">
+                        <img
+                          src={img4}
+                          className="img-responsive"
+                          alt="Revenue"
+                        />
                       </div>
                     </div>
                   </div>

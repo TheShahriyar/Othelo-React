@@ -56,16 +56,16 @@ export default class PortfolioSection extends Component {
               </ul>
             </div>
           </div>
-          <div class="row">
-            <div class="portfolio-box">
-              <div class="col-md-4 col-sm-6 html">
-                <div class="portfolio-post mb30">
+          <div className="row">
+            <div className="portfolio-box">
+              <div className="col-md-4 col-sm-6 html">
+                <div className="portfolio-post mb30">
                   <img src={img1} alt="" />
-                  <div class="hover-box">
-                    <div class="inner-hover">
-                      <div class="middle">
-                        <div class="portfolio-post-btn">
-                          <a href="#" class="link">
+                  <div className="hover-box">
+                    <div className="inner-hover">
+                      <div className="middle">
+                        <div className="portfolio-post-btn">
+                          <a href="#" className="link">
                             View
                           </a>
                         </div>
@@ -78,14 +78,14 @@ export default class PortfolioSection extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 wordpress">
-                <div class="portfolio-post mb30">
+              <div className="col-md-4 col-sm-6 wordpress">
+                <div className="portfolio-post mb30">
                   <img src={img2} alt="" />
-                  <div class="hover-box">
-                    <div class="inner-hover">
-                      <div class="middle">
-                        <div class="portfolio-post-btn">
-                          <a href="#" class="link">
+                  <div className="hover-box">
+                    <div className="inner-hover">
+                      <div className="middle">
+                        <div className="portfolio-post-btn">
+                          <a href="#" className="link">
                             View
                           </a>
                         </div>
@@ -98,14 +98,14 @@ export default class PortfolioSection extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 joomla">
-                <div class="portfolio-post mb30">
+              <div className="col-md-4 col-sm-6 joomla">
+                <div className="portfolio-post mb30">
                   <img src={img3} alt="" />
-                  <div class="hover-box">
-                    <div class="inner-hover">
-                      <div class="middle">
-                        <div class="portfolio-post-btn">
-                          <a href="#" class="link">
+                  <div className="hover-box">
+                    <div className="inner-hover">
+                      <div className="middle">
+                        <div className="portfolio-post-btn">
+                          <a href="#" className="link">
                             View
                           </a>
                         </div>
@@ -118,14 +118,14 @@ export default class PortfolioSection extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 html joomla">
-                <div class="portfolio-post mb30">
+              <div className="col-md-4 col-sm-6 html joomla">
+                <div className="portfolio-post mb30">
                   <img src={img6} alt="" />
-                  <div class="hover-box">
-                    <div class="inner-hover">
-                      <div class="middle">
-                        <div class="portfolio-post-btn">
-                          <a href="#" class="link">
+                  <div className="hover-box">
+                    <div className="inner-hover">
+                      <div className="middle">
+                        <div className="portfolio-post-btn">
+                          <a href="#" className="link">
                             View
                           </a>
                         </div>
@@ -138,14 +138,14 @@ export default class PortfolioSection extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 joomla wordpress">
-                <div class="portfolio-post mb30">
+              <div className="col-md-4 col-sm-6 joomla wordpress">
+                <div className="portfolio-post mb30">
                   <img src={img5} alt="" />
-                  <div class="hover-box">
-                    <div class="inner-hover">
-                      <div class="middle">
-                        <div class="portfolio-post-btn">
-                          <a href="#" class="link">
+                  <div className="hover-box">
+                    <div className="inner-hover">
+                      <div className="middle">
+                        <div className="portfolio-post-btn">
+                          <a href="#" className="link">
                             View
                           </a>
                         </div>

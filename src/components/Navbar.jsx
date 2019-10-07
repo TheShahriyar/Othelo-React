@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Navbar extends Component {
   render() {
@@ -17,9 +18,15 @@ export default class Navbar extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand page-scroll" href="/">
+            <Link
+              className="navbar-brand page-scroll"
+              to="hero-banner"
+              activeClass="active"
+              smooth={true}
+              duration={500}
+            >
               Othelo
-            </a>
+            </Link>
           </div>
 
           <div
@@ -28,50 +35,113 @@ export default class Navbar extends Component {
           >
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <a className="page-scroll" href="#hero-banner">
+                <Link
+                  className="page-scroll"
+                  to="hero-banner"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a className="page-scroll" href="#about-section">
+                <Link
+                  className="page-scroll"
+                  to="about-section"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="page-scroll" href="#services">
+                <Link
+                  className="page-scroll"
+                  to="services"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
                   Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="page-scroll" href="#portfolio">
+                <Link
+                  className="page-scroll"
+                  to="portfolio"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="page-scroll" href="#team">
+                <Link
+                  className="page-scroll"
+                  to="team"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
                   Team
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="page-scroll" href="#blog">
+                <Link
+                  className="page-scroll"
+                  to="blog"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="page-scroll" href="#pricing">
+                <Link
+                  className="page-scroll"
+                  to="pricing"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="page-scroll" href="#client">
+                <Link
+                  className="page-scroll"
+                  to="client"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
                   Clients
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="page-scroll" href="#contact">
+                <Link
+                  className="page-scroll"
+                  to="contact"
+                  activeClass="active"
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

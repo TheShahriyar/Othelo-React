@@ -83,7 +83,7 @@ export default class MoreAboutSection extends Component {
                         data-percentage="65"
                       >
                         <span className="progress-bar-percentage pull-right">
-                          <span class="count"></span> %
+                          <span className="count"></span> %
                         </span>
                       </div>
                     </div>
@@ -99,7 +99,7 @@ export default class MoreAboutSection extends Component {
                         data-percentage="95"
                       >
                         <span className="progress-bar-percentage pull-right">
-                          <span class="count"></span> %
+                          <span className="count"></span> %
                         </span>
                       </div>
                     </div>
@@ -115,7 +115,7 @@ export default class MoreAboutSection extends Component {
                         data-percentage="75"
                       >
                         <span className="progress-bar-percentage pull-right">
-                          <span class="count"></span> %
+                          <span className="count"></span> %
                         </span>
                       </div>
                     </div>

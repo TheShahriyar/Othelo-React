@@ -1,10 +1,8 @@
 import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "bootstrap/dist/css/bootstrap.css";
 import "./css/lineicon.css";
 import "./css/animate.css";
-// import "./css/owl.carousel.css";
-// import "./css/owl.theme.css";
-// import "./css/owl.transitions.css";
 import "./scss/style.scss";
 import "./scss/responsive.scss";
 
@@ -42,9 +40,15 @@ export default class App extends Component {
           <ClientSection />
           <ContactSection />
           <FooterSection />
-          <div id="back-to-top" className="back-to-top reveal">
+          <Link
+            id="back-to-top"
+            className="back-to-top reveal"
+            to="hero-banner"
+            smooth={true}
+            duration={500}
+          >
             <i className="fa fa-angle-up fa-2x"></i>
-          </div>
+          </Link>
         </div>
       </React.Fragment>
     );

@@ -8,29 +8,29 @@ export default class TestimonialSection extends Component {
     return (
       <div
         id="carousel-example-generic"
-        class="carousel slide testimonial-slide"
+        className="carousel slide testimonial-slide"
         data-ride="carousel"
       >
         {/* <!-- Indicators --> */}
-        <ol class="carousel-indicators">
+        <ol className="carousel-indicators">
           <li
             data-target="#carousel-example-generic"
             data-slide-to="0"
-            class="active"
+            className="active"
           >
-            <img class="img-responsive" src={testi1} alt="" />
+            <img className="img-responsive" src={testi1} alt="" />
           </li>
           <li data-target="#carousel-example-generic" data-slide-to="1">
-            <img class="img-responsive" src={testi2} alt="" />
+            <img className="img-responsive" src={testi2} alt="" />
           </li>
           <li data-target="#carousel-example-generic" data-slide-to="2">
-            <img class="img-responsive" src={testi3} alt="" />
+            <img className="img-responsive" src={testi3} alt="" />
           </li>
         </ol>
         {/* <!-- Wrapper for slides --> */}
-        <div class="carousel-inner white" role="listbox">
-          <div class="item active">
-            <div class="testimonial-speech">
+        <div className="carousel-inner white" role="listbox">
+          <div className="item active">
+            <div className="testimonial-speech">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -42,8 +42,8 @@ export default class TestimonialSection extends Component {
             </div>
             <span>- David Millar</span>
           </div>
-          <div class="item">
-            <div class="testimonial-speech">
+          <div className="item">
+            <div className="testimonial-speech">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -55,8 +55,8 @@ export default class TestimonialSection extends Component {
             </div>
             <span>- Mike Hussy</span>
           </div>
-          <div class="item">
-            <div class="testimonial-speech">
+          <div className="item">
+            <div className="testimonial-speech">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -71,20 +71,20 @@ export default class TestimonialSection extends Component {
         </div>
         {/* <!-- Controls --> */}
         <a
-          class="left carousel-control"
+          className="left carousel-control"
           href="#carousel-example-generic"
           role="button"
           data-slide="prev"
         >
-          <span class="fa fa-long-arrow-left" aria-hidden="true"></span>
+          <span className="fa fa-long-arrow-left" aria-hidden="true"></span>
         </a>
         <a
-          class="right carousel-control"
+          className="right carousel-control"
           href="#carousel-example-generic"
           role="button"
           data-slide="next"
         >
-          <span class="fa fa-long-arrow-right" aria-hidden="true"></span>
+          <span className="fa fa-long-arrow-right" aria-hidden="true"></span>
         </a>
       </div>
     );

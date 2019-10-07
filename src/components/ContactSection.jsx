@@ -15,7 +15,7 @@ export default class ContactSection extends Component {
                 <h4 style={{ marginBottom: "30px", color: "#fff" }}>
                   Fill The Form
                 </h4>
-                <form name="sentMessage" id="contactForm" novalidate>
+                <form name="sentMessage" id="contactForm" noValidate>
                   <div className="contact-form">
                     <div className="form-group">
                       <input
