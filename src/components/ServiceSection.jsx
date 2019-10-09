@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { Tabs, useTabState, Panel } from "@bumaga/tabs";
 
 import img2 from "../images/others/img-2.jpg";
 import img3 from "../images/others/img-3.jpg";
@@ -8,100 +9,83 @@ import img6 from "../images/others/img-6.jpg";
 import img7 from "../images/others/img-7.jpg";
 import SectionTitle from "./SectionTitle";
 
-export default class ServiceSection extends Component {
-  render() {
-    return (
-      <section
-        id="services"
-        className="pad-t80"
-        style={{ backgroundColor: "#f3f3f3" }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <SectionTitle title="Our Services">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                  erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                  suscipit, posuere a, pede. Donec nec justo
-                </p>
-              </SectionTitle>
-            </div>
+const cn = (...args) => args.filter(Boolean).join(" ");
+
+const Tab = ({ children }) => {
+  const { isActive, onClick } = useTabState();
+
+  return (
+    <li className={cn("tab", isActive && "active")} onClick={onClick}>
+      {children}
+    </li>
+  );
+};
+
+const ServiceSection = () => {
+  return (
+    <section
+      id="services"
+      className="pad-t80"
+      style={{ backgroundColor: "#f3f3f3" }}
+    >
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <SectionTitle title="Our Services">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+                odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
+                turpis. Suspendisse urna nibh, viverra non, semper suscipit,
+                posuere a, pede. Donec nec justo
+              </p>
+            </SectionTitle>
           </div>
-          <div className="row">
-            <div className="col-md-12">
-              <div className="othelo-tab" id="othelo-tab">
-                <ul className="nav nav-tabs nav-justified" role="tablist">
-                  <li role="presentation" className="active">
-                    <a
-                      href="#tab1"
-                      role="tab"
-                      data-toggle="tab"
-                      aria-expanded="false"
-                    >
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="othelo-tab" id="othelo-tab">
+              <Tabs>
+                <ul className="react-tabs">
+                  <Tab>
+                    <a>
                       <i className="fa fa-joomla"></i> Joomla <br />
                       Template
                     </a>
-                  </li>
-                  <li role="presentation" className="">
-                    <a
-                      href="#tab2"
-                      role="tab"
-                      data-toggle="tab"
-                      aria-expanded="false"
-                    >
+                  </Tab>
+                  <Tab>
+                    <a>
                       <i className="fa fa-wordpress"></i> Wordpress <br />
                       Theme
                     </a>
-                  </li>
-                  <li role="presentation" className="">
-                    <a
-                      href="#tab3"
-                      role="tab"
-                      data-toggle="tab"
-                      aria-expanded="false"
-                    >
+                  </Tab>
+                  <Tab>
+                    <a>
                       <i className="fa fa-codepen"></i> Web <br />
                       Application
                     </a>
-                  </li>
-                  <li role="presentation" className="">
-                    <a
-                      href="#tab4"
-                      role="tab"
-                      data-toggle="tab"
-                      aria-expanded="false"
-                    >
+                  </Tab>
+                  <Tab>
+                    <a>
                       <i className="fa fa-desktop"></i> Website <br />
                       Design
                     </a>
-                  </li>
-                  <li role="presentation" className="">
-                    <a
-                      href="#tab5"
-                      role="tab"
-                      data-toggle="tab"
-                      aria-expanded="false"
-                    >
+                  </Tab>
+                  <Tab>
+                    <a>
                       <i className="fa fa-file-code-o"></i> Software <br />
                       Developement
                     </a>
-                  </li>
-                  <li role="presentation" className="">
-                    <a
-                      href="#tab6"
-                      role="tab"
-                      data-toggle="tab"
-                      aria-expanded="true"
-                    >
+                  </Tab>
+                  <Tab>
+                    <a>
                       <i className="fa fa-cubes"></i> Graphic <br />
                       Design
                     </a>
-                  </li>
+                  </Tab>
                 </ul>
+
                 <div className="tab-content">
-                  <div role="tabpanel" className="tab-pane active" id="tab1">
+                  <Panel>
                     <div className="row">
                       <div className="col-md-6 col-sm-6">
                         <img
@@ -134,8 +118,8 @@ export default class ServiceSection extends Component {
                                 Malesuada fames ante
                               </li>
                               <li>
-                                <i className="fa-li fa fa-check-circle"></i>Nam
-                                blandit fermentum
+                                <i className="fa-li fa fa-check-circle"></i>
+                                Nam blandit fermentum
                               </li>
                               <li>
                                 <i className="fa-li fa fa-check-circle"></i>
@@ -146,8 +130,8 @@ export default class ServiceSection extends Component {
                                 Malesuada fames ipsum
                               </li>
                               <li>
-                                <i className="fa-li fa fa-check-circle"></i>Nam
-                                at fermentum
+                                <i className="fa-li fa fa-check-circle"></i>
+                                Nam at fermentum
                               </li>
                             </ul>
                           </div>
@@ -164,8 +148,8 @@ export default class ServiceSection extends Component {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div role="tabpanel" className="tab-pane" id="tab2">
+                  </Panel>
+                  <Panel>
                     <div className="row">
                       <div className="col-md-4 col-sm-6">
                         <span className="dropcap bg circle">M</span>
@@ -187,8 +171,8 @@ export default class ServiceSection extends Component {
                       <div className="col-md-4 col-sm-6">
                         <ul className="fa-ul">
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -199,8 +183,8 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -211,14 +195,14 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                         </ul>
                       </div>
                     </div>
-                  </div>
-                  <div role="tabpanel" className="tab-pane" id="tab3">
+                  </Panel>
+                  <Panel>
                     <div className="row">
                       <div className="col-md-4 col-sm-6">
                         <span className="dropcap bg circle">M</span>
@@ -233,8 +217,8 @@ export default class ServiceSection extends Component {
                       <div className="col-md-4 col-sm-6">
                         <ul className="fa-ul">
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -245,8 +229,8 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -257,8 +241,8 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                         </ul>
                       </div>
@@ -270,8 +254,8 @@ export default class ServiceSection extends Component {
                         />
                       </div>
                     </div>
-                  </div>
-                  <div role="tabpanel" className="tab-pane" id="tab4">
+                  </Panel>
+                  <Panel>
                     <div className="row">
                       <div className="col-md-4 col-sm-6">
                         <img
@@ -293,8 +277,8 @@ export default class ServiceSection extends Component {
                       <div className="col-md-4 col-sm-6">
                         <ul className="fa-ul">
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -305,8 +289,8 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -317,14 +301,14 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                         </ul>
                       </div>
                     </div>
-                  </div>
-                  <div role="tabpanel" className="tab-pane" id="tab5">
+                  </Panel>
+                  <Panel>
                     <div className="row">
                       <div className="col-md-4 col-sm-6">
                         <span className="dropcap bg circle">M</span>
@@ -346,8 +330,8 @@ export default class ServiceSection extends Component {
                       <div className="col-md-4 col-sm-6">
                         <ul className="fa-ul">
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -358,8 +342,8 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -370,14 +354,14 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                         </ul>
                       </div>
                     </div>
-                  </div>
-                  <div role="tabpanel" className="tab-pane" id="tab6">
+                  </Panel>
+                  <Panel>
                     <div className="row">
                       <div className="col-md-4 col-sm-6">
                         <span className="dropcap bg circle">M</span>
@@ -392,8 +376,8 @@ export default class ServiceSection extends Component {
                       <div className="col-md-4 col-sm-6">
                         <ul className="fa-ul">
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -404,8 +388,8 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                           <li>
                             <i className="fa-li fa fa-check-circle"></i>
@@ -416,8 +400,8 @@ export default class ServiceSection extends Component {
                             blandit quam nibh, at fermentum
                           </li>
                           <li>
-                            <i className="fa-li fa fa-check-circle"></i>Interdum
-                            et malesuada fames ac ante
+                            <i className="fa-li fa fa-check-circle"></i>
+                            Interdum et malesuada fames ac ante
                           </li>
                         </ul>
                       </div>
@@ -429,13 +413,14 @@ export default class ServiceSection extends Component {
                         />
                       </div>
                     </div>
-                  </div>
+                  </Panel>
                 </div>
-              </div>
+              </Tabs>
             </div>
           </div>
         </div>
-      </section>
-    );
-  }
-}
+      </div>
+    </section>
+  );
+};
+export default ServiceSection;

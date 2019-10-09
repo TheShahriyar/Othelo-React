@@ -502,16 +502,22 @@ Author URI: http://theshahriyar.com
 
 .othelo-tab {
 
-	.nav-tabs {
+	.react-tabs {
+		display: flex;
+		justify-content: space-around;
+		
+
 		>li {
 			position: relative;
-		    float: inherit;
-		    height: 150px;
-		    text-align: center;
+			float: inherit;
+			height: 150px;
+			text-align: center;
+			border: 0;
+			border-radius: 0;
 
 		    a {
 		    	color: $title-color;
-				font-size: 14px;
+					font-size: 14px;
 			    line-height: 22px;
 			    font-weight: 600;
 			    text-transform: uppercase;
@@ -569,6 +575,8 @@ Author URI: http://theshahriyar.com
 
 	.tab-content {
 		position: relative;
+		background: #fafafa;
+		padding: 50px 0 80px;
 
 		&:before,
 		&:after {
@@ -1039,7 +1047,7 @@ button.mfp-arrow {
 
 .team-member-3 {
     position: relative;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 	.team-member-img {
 	    position: relative;
 	    overflow: hidden;
@@ -1409,6 +1417,7 @@ button.mfp-arrow {
 
 .form-map {
 	position: relative;
+	overflow: hidden;
 
 	#map {
 	    width: 100%;

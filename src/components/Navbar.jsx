@@ -1,8 +1,23 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default class Navbar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isNavbarOpen: false
+    };
+  }
+
+  handleNavbar = () => {
+    this.setState({
+      isNavbarOpen: !this.state.isNavbarOpen
+    });
+  };
+
   render() {
+    const { isNavbarOpen } = this.state;
     return (
       <nav id="navbar" className="navbar navbar-default navbar-fixed-top">
         <div className="container">
@@ -10,8 +25,8 @@ export default class Navbar extends Component {
             <button
               type="button"
               className="navbar-toggle"
-              data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1"
+              onClick={this.handleNavbar}
+              data-target="bs-example-navbar-collapse-1"
             >
               <span className="sr-only">Toggle navigation</span>
               <span className="icon-bar"></span>
@@ -30,7 +45,9 @@ export default class Navbar extends Component {
           </div>
 
           <div
-            className="collapse navbar-collapse"
+            className={`collapse navbar-collapse ${
+              isNavbarOpen ? "show" : "hide"
+            }`}
             id="bs-example-navbar-collapse-1"
           >
             <ul className="nav navbar-nav navbar-right">

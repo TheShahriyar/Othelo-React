@@ -30,7 +30,7 @@ export default class PortfolioSection extends Component {
               </SectionTitle>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-md-12">
               <ul className="filter">
                 <li>
@@ -55,7 +55,7 @@ export default class PortfolioSection extends Component {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="portfolio-box">
               <div className="col-md-4 col-sm-6 html">

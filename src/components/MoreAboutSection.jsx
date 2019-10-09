@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import SectionTitle from "./SectionTitle";
+import ProgressBar from "./ProgressBar";
+import CountUp from "react-countup";
 
 export default class MoreAboutSection extends Component {
   render() {
@@ -25,7 +27,7 @@ export default class MoreAboutSection extends Component {
               <div className="row" style={{ marginTop: 30 }}>
                 <div className="col-md-6">
                   <div className="feature-3">
-                    <a href="#">
+                    <a href="">
                       <i className="icon-clock"></i>
                     </a>
                     <h4>Professional</h4>
@@ -73,54 +75,9 @@ export default class MoreAboutSection extends Component {
             </div>
             <div className="col-md-6">
               <div className="skill-section">
-                <div className="skill-shortcode">
-                  <div className="skill">
-                    <span className="skill-name">Web Design</span>
-                    <div className="progress">
-                      <div
-                        className="progress-bar"
-                        role="progressbar"
-                        data-percentage="65"
-                      >
-                        <span className="progress-bar-percentage pull-right">
-                          <span className="count"></span> %
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-shortcode">
-                  <div className="skill">
-                    <span className="skill-name">Joomla</span>
-                    <div className="progress">
-                      <div
-                        className="progress-bar"
-                        role="progressbar"
-                        data-percentage="95"
-                      >
-                        <span className="progress-bar-percentage pull-right">
-                          <span className="count"></span> %
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-shortcode">
-                  <div className="skill">
-                    <span className="skill-name">Javascript</span>
-                    <div className="progress">
-                      <div
-                        className="progress-bar"
-                        role="progressbar"
-                        data-percentage="75"
-                      >
-                        <span className="progress-bar-percentage pull-right">
-                          <span className="count"></span> %
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <ProgressBar title={"Web Design"} width={80} />
+                <ProgressBar title={"Web Developing"} width={95} />
+                <ProgressBar title={"JavaScript"} width={70} />
               </div>
               <div
                 className="row animated-counter-section"
@@ -128,49 +85,25 @@ export default class MoreAboutSection extends Component {
               >
                 <div className="col-md-3 col-sm-6">
                   <div className="animated-counter text-center">
-                    <div
-                      className="animated-number"
-                      data-from="0"
-                      data-to="125"
-                    >
-                      125
-                    </div>
+                    <CountUp className="animated-number" end={125} />
                     <h4>Project</h4>
                   </div>
                 </div>
                 <div className="col-md-3 col-sm-6">
                   <div className="animated-counter text-center">
-                    <div
-                      className="animated-number"
-                      data-from="0"
-                      data-to="586"
-                    >
-                      586
-                    </div>
+                    <CountUp className="animated-number" end={586} />
                     <h4>Coffee</h4>
                   </div>
                 </div>
                 <div className="col-md-3 col-sm-6">
                   <div className="animated-counter text-center">
-                    <div
-                      className="animated-number"
-                      data-from="0"
-                      data-to="355"
-                    >
-                      355
-                    </div>
+                    <CountUp className="animated-number" end={355} />
                     <h4>Client</h4>
                   </div>
                 </div>
                 <div className="col-md-3 col-sm-6">
                   <div className="animated-counter text-center">
-                    <div
-                      className="animated-number"
-                      data-from="0"
-                      data-to="125"
-                    >
-                      125
-                    </div>
+                    <CountUp className="animated-number" end={125} />
                     <h4>Award</h4>
                   </div>
                 </div>
